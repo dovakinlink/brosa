@@ -1,0 +1,99 @@
+{
+  "name": "brosa",
+  "version": "1.0.0",
+  "description": "The personal website of Jesse Farebrother where he shares his blog, life, career and social media feeds.",
+  "private": true,
+  "main": "./build/start-server",
+  "scripts": {
+    "dev": "webpack-dev-server --content-base static --history-api-fallback --watch --config \"./webpack/webpackfile.client.babel.js\"",
+    "build:client": "webpack --progress --color --display-exclude --display-error-details --bail --config \"./webpack/webpackfile.client.babel.js\"",
+    "build:server": "webpack --progress --color --display-exclude --display-error-details --bail --config \"./webpack/webpackfile.server.babel.js\" && npm run-script build:webpackfile && cp ./bin/start-server ./build/ && cp ./webpack/universal-webpack-settings.js ./build/",
+    "build:image": "docker build -t jessefarebro/brosa .",
+    "build:webpackfile": "./bin/tojson ./webpack/webpackfile.js > ./build/webpackfile.json",
+    "build": "npm run-script build:server && npm run-script build:client && npm run-script build:image",
+    "clean": "rm -rf build && docker rmi jessefarebro/brosa",
+    "start": "./build/start-server"
+  },
+  "author": "Jesse Farebrother <jessefarebro@gmail.com>",
+  "license": "ISC",
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "fix": true,
+    "ignores": [
+      "static/**",
+      "build/**"
+    ],
+    "envs": [
+      "browser"
+    ],
+    "extends": [
+      "xo-react"
+    ],
+    "plugins": [
+      "import"
+    ],
+    "parser": "babel-eslint",
+    "settings": {
+      "import/resolver": {
+        "babel-module": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".css"
+          ]
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "colorguard": "^1.2.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-import-resolver-babel-module": "^2.2.1",
+    "eslint-import-resolver-webpack": "^0.8.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0",
+    "file-loader": "^0.9.0",
+    "nyc": "^10.0.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0",
+    "postcss-loader": "^1.2.1",
+    "raw-loader": "^0.5.1",
+    "react-transform-catch-errors": "^1.0.2",
+    "react-transform-hmr": "^1.0.4",
+    "redbox-react": "^1.3.3",
+    "style-loader": "^0.13.1",
+    "tojson-loader": "^1.0.4",
+    "url-loader": "^0.5.7",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-merge": "^1.1.2",
+    "xo": "^0.17.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "immutable": "^3.8.1",
+    "react": "^15.4.1",
+    "react-css-modules": "^4.1.0",
+    "react-dom": "^15.4.1",
+    "react-helmet": "^3.2.3",
+    "react-router": "^3.0.0",
+    "universal-webpack": "^0.1.44",
+    "webpack": "^2.1.0-beta.28"
+  }
+}

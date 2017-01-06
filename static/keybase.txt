@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/brosa
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://brosa.me
+  * I am brosa (https://keybase.io/brosa) on keybase.
+  * I have a public key with fingerprint 95C2 0C2E 6E3E 45CC 9040  B9E3 8488 A7A7 D08B 2990
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101d03872b30d4534b09768f90d81bba8f696dd6a9fe27d07eea85de17aa71d3f640a",
+            "fingerprint": "95c20c2e6e3e45cc9040b9e38488a7a7d08b2990",
+            "host": "keybase.io",
+            "key_id": "8488a7a7d08b2990",
+            "kid": "0101d03872b30d4534b09768f90d81bba8f696dd6a9fe27d07eea85de17aa71d3f640a",
+            "uid": "db57a35f51259691e8f7a192f9b87719",
+            "username": "brosa"
+        },
+        "service": {
+            "hostname": "brosa.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468356185,
+    "expire_in": 157680000,
+    "prev": "8b4877665c5e10130c24bc9fcc5f24bc9cbee41a4636a91bb0183fa15ee5b107",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUl9IFEEYPzM1L4zsoT9kFEOJ0qkztzu7O0dk9IceJSKlwrtmdmevTds97/au
+xCKFMkPRKyFJCBMSsygSRXuorl4Ks8DSh6CiCAoKCoKweujPrBT00GPzMjPf/H6/
+7/t+86ULsn3+rONtg4NT7aXprMl3zFdzorq2CTDHaAShJlDH5zZeb/CEG6mzDBAC
+EEFkQElTg0yChowlmUGiKppJoKEhxqhmKkQxDIUSkwdVA6qcUw0bHKmUqsiQTEWG
+FASAadlRHo/FLdsVsgTrQagHucIlLmNdJ1CGjHBJkzWNqlToaCxICBTE/U7CY4ji
+GE3wcssRMXGJzJX3D/x/rjs5J2cwrFIJmxgFMVEI4pqpUkSCJmGaqiLiARM8btOD
+XKBZ3ElQcDQARChl6dxz1Wvj7+dycQyAWNxxHd2pF9H9rhtLhDyW2xjzYIc4i/wW
+iDDLNoSBgpHi8YTl2CCEBFJ3LU8RyYomYQVpOAD44ZgV5xHLQ2DRMBTLy8NTnl1M
+FuUqCtYxR3AHksQfyEwnpq5jc+6kM85lRGVFEs4InyDSJJMizDlmCKrA66nBdkBI
+pHJpVGgmrKhN3WScg6P+U1lF831Zfl9uzjxvtHz+/MV/5m02O+9HyXDLcOmWD7VP
+lW1Tq3p6OhfZofauhkU3MhtfHOrYfj0C5vecL1iwZubAyMA+fvUavYrPJUv7pXNr
+u4Gz/OaDjoP4Vuvjyba7dVVLG9BEN3w7+r5fXrKpZex5ftcyPfBkV3emsKwsOVTD
+K1b3fzI/3pmet65HS39uGOt9U3nt7DRvrsXDs7uV3KFM5ufA+Onw6JX7vXLoel7O
+RNHCPTO73vXdnh3f+62qMnUmnN9eNtFx+WR4p+/IjQ3dIw/fkgcXXsjpitetyebp
+/kJftL7x+8WXZ1Zkp1OvjnU8uleycoU99uz0tvXF4ZqbxX1f0KWdtHNrNa/6+qOl
+r3Tzh1UTT3t/AQ==
+=GvGd
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brosa
+
+==================================================================

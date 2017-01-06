@@ -1,0 +1,19 @@
+[ignore]
+.*/build/.*
+.*/__tests__/.*
+.*/react/node_modules/.*
+.*/react-helmet/node_modules/.*
+.*webpackfile.js.*
+
+[include]
+
+[libs]
+./interfaces
+
+[options]
+module.system=haste
+
+module.name_mapper='^brosa/\(.*\)' -> '<PROJECT_ROOT>/app/\1'
+
+unsafe.enable_getters_and_setters=true
+esproposal.decorators=ignore

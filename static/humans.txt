@@ -1,0 +1,9 @@
+/* TEAM */
+        Lead Developer: Jesse Farebrother
+        Contact: jessefarebro [at] gmail.com
+        Twitter: @jessefarebro
+        From: St. Albert, Alberta, Canada
+
+/* SITE */
+        Last update: 2017/01/04
+        Language: English

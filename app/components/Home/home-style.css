@@ -1,0 +1,7 @@
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background: linear-gradient(180deg, #273550 0%, #416081 41%, #adacb2 78%, #eac3a2 100%);
+}
