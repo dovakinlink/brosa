@@ -1,5 +1,7 @@
 # Brosa
-[![CircleCI](https://circleci.com/gh/JesseFarebro/brosa.svg?style=svg)](https://circleci.com/gh/JesseFarebro/brosa)
+[![CircleCI](https://circleci.com/gh/JesseFarebro/brosa.svg?style=shield)](https://circleci.com/gh/JesseFarebro/brosa)
+[![dependencies Status](https://david-dm.org/jessefarebro/brosa/status.svg)](https://david-dm.org/jessefarebro/brosa)
+[![devDependencies Status](https://david-dm.org/jessefarebro/brosa/dev-status.svg)](https://david-dm.org/jessefarebro/brosa?type=dev)
 
 This is the repository of my personal website. This project started off as a passion project to learn some new technologies and showcase what I think is a modern isomorphic web app. There will be plenty more added on to the website in the future months (school permitting) but stay tuned for some tutorials, blog posts, competitive programming problems and solutions as well as the occasional rants.
 
