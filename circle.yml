@@ -5,7 +5,7 @@ machine:
     version: 6.9
 compile:
   override:
-    - npm build
+    - npm run-script build
 test:
   override:
     - docker run -d -p 8080:8080 jessefarebro/brosa; sleep 10
