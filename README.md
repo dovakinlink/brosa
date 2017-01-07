@@ -18,7 +18,6 @@ I've exhaustively tried to use every last feature in the latest versions of popu
 - [React CSSModules](https://github.com/gajus/react-css-modules)
 - [PostCSS](https://github.com/postcss/postcss)
 - [Webpack 2](https://github.com/webpack/webpack)
-- [Universal Webpack](https://github.com/halt-hammerzeit/universal-webpack)
 - [Express](https://github.com/expressjs/express)
 
 ## Deployment

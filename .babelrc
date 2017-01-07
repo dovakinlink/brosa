@@ -14,7 +14,7 @@
     }]
   ],
   "env": {
-    "development": {
+    "development/client": {
       "plugins": [
         ["react-transform", {
           "transforms": [{
