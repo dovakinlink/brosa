@@ -1,3 +1,6 @@
+import os from 'os';
+import cluster from 'cluster';
+
 import React from 'react';
 
 import Express from 'express';
@@ -8,7 +11,10 @@ import { match, RouterContext } from 'react-router';
 
 import { routes } from 'brosa/routes';
 
-const app = new Express();
+const port = process.env.PORT || 8080;
+const processes = process.env.PROCESSES || os.cpus().length;
+
+export const app = new Express();
 app.use(compression());
 
 // TODO: Handle page rendering more gracefully, use react-helmet
@@ -42,10 +48,41 @@ app.use((req, res, next) => {
   });
 });
 
-export default () => {
-  const port = process.env.PORT || 8080;
+export function startServer() {
+  console.log(`Started server at PID ${process.pid}`);
 
   app.listen(port, () => {
     console.info(`Listening on port ${port}...`)
   });
+}
+
+export function workerExit(failedProcesses, worker) {
+  if (failedProcesses < 20) {
+    console.log(`Worker ${worker.process.pid} died, restarting.`);
+    cluster.fork();
+    failedProcesses++;
+  } else {
+    console.log('Workers died too many times, exiting.');
+    process.exit();
+  }
+}
+
+export function startCluster() {
+  let failedProcesses = 0;
+
+  cluster.setupMaster();
+
+  for (let i = 0; i < processes; i++) {
+    cluster.fork();
+  }
+
+  cluster.on('exit', (worker) => workerExit(failedProcesses++, worker));
+
+  console.log(`Started cluster with ${processes} processes.`);
+}
+
+if (cluster.isMaster && processes > 1) {
+  startCluster();
+} else {
+  startServer();
 }
