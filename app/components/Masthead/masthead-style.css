@@ -19,32 +19,32 @@
   font-family: sans-serif;
   font-style: normal;
   -webkit-margin-after: 0em;
-}
 
-.descript a {
-  text-decoration: none;
-  color: #99cbff;
-  font-weight: 200;
+  & a {
+    text-decoration: none;
+    color: #99cbff;
+    font-weight: 200;
+  }
 }
 
 .nav {
   display: none;
   font-size: 17pt;
-}
 
-.nav a {
-  text-decoration: none;
-  color: #99cbff;
-  font-weight: 300;
-}
+  & a {
+    text-decoration: none;
+    color: #99cbff;
+    font-weight: 300;
+  }
 
-.nav span:after {
-  content: ' / ';
-  color: #999;
-}
+  & span:after {
+    content: ' / ';
+    color: #999;
+  }
 
-.nav span:last-of-type:after {
-  content: '';
+  & span:last-of-type:after {
+    content: '';
+  }
 }
 
 .dotStyle {

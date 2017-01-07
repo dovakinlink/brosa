@@ -33,7 +33,7 @@ export default class City extends React.Component {
 
     return (
       <div styleName="city-background-wrapper">
-        <figure styleName="city-floating-background"
+        <div styleName="city-floating-background"
           style={{
             transform: 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
             WebkitTransform: 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)',
@@ -43,7 +43,7 @@ export default class City extends React.Component {
             src={require("brosa/assets/edmonton.svg")} />
           <img styleName="city-edmonton-front"
             src={require("brosa/assets/edmonton_front.svg")} />
-        </figure>
+        </div>
       </div>
     );
   }

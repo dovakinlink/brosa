@@ -9,16 +9,16 @@
 .city-floating-background {
   position: relative;
   transform-style: preserve-3d;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-}
 
-.city-floating-background img {
-  display: block;
-  width: 102vw;
-  max-height: 60vh;
+  & img {
+    display: block;
+    width: 102vw;
+    max-height: 60vh;
+
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
 }
 
 .city-edmonton {
